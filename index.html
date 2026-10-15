@@ -224,7 +224,7 @@ document.getElementById("ranking").innerHTML = PLAYERS.map(p => `
     <div class="pos">${p.pos}${p.trophy ? " 🏆" : ""}</div>
     <div class="photo${p.photo ? "" : " empty"}">${p.photo ? `<img src="${p.photo}" alt="${p.prenom} ${p.nom}">` : ""}</div>
     <div class="name">
-      <span class="n">${p.prenom} ${p.nom}</span>
+      ${p.prenom}<span class="n"> ${p.nom}</span>
       <span class="p">${p.team}</span>
     </div>
     <div class="pts${p.pts === 0 ? " zero" : ""}">
